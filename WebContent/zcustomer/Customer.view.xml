@@ -4,6 +4,7 @@
 	<Page title="Title">
 		<content>
 			<VBox class="sapUiSmallMargin">
+			<Button text="Get Customer" press="onPressItemList"/>
 		<f:SimpleForm id="SimpleFormDisplay354"
 			editable="false"
 			layout="ResponsiveGridLayout"
@@ -21,9 +22,7 @@
 			columnsL="1"
 			columnsM="1"
 			singleContainerFullSize="false" 
-			binding="{/Customers('ALFKI')}"
 			
-		
 			>
 			<f:content>
 				<Label text="Customer ID" />

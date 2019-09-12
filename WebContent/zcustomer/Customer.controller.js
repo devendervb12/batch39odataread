@@ -12,7 +12,15 @@ sap.ui.controller("zcustomer.Customer", {
 			this.getView().setModel(oModel);
 			
 	},
-
+   onPressListItem : function(){
+	   // customerID 
+	   //SimpleFormDisplay354
+	   
+	   var oSf = this.getView().byId("SimpleFormDisplay354");
+	   var customerID = "ALFKI";
+	   oSf.bindElement("/customers('"+customerID+"')");
+	   
+   }
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).
